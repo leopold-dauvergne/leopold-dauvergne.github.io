@@ -1,0 +1,85 @@
+// Mixins
+// ---------------------------------------/
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+@mixin transition($value) {
+  transition: $value;
+}
+
+// Clearfix
+@mixin clearfix {
+  &:before {
+    display: table;
+    content: "";
+  }
+  &:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+}
+
+// Media queries
+@mixin media_max($screen_width) {
+  @media (max-width: $screen_width) { @content; }
+}
+
+@mixin media_min($screen_width) {
+  @media (min-width: $screen_width) { @content; }
+}
+
+@mixin media_larger_than_mobile {
+  @media (min-width: 600px) { @content; }
+}
+
+@mixin media_mobile {
+  @media (max-width: 600px) { @content; }
+}
+
+// Type utilities
+@mixin serif {
+  font-family: $font-serif;
+}
+
+@mixin serif_regular {
+  @include serif;
+  font-weight: 400;
+}
+
+@mixin serif_bold {
+  @include serif;
+  font-weight: 700;
+}
+
+@mixin sans {
+  font-family: $font-sans;
+}
+
+@mixin sans_light {
+  @include sans;
+  font-weight: 300;
+}
+
+@mixin sans_regular {
+  @include sans;
+  font-weight: 400;
+}
+
+@mixin sans_bold {
+  @include sans;
+  font-weight: 700;
+}
+
+@mixin sans_extrabold {
+  @include sans;
+  font-weight: 800;
+}
+
+// Layout
+@mixin section_border {
+  border-bottom: 1px solid $border;
+  padding-bottom: .3rem;
+}
