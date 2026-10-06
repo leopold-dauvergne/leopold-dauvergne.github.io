@@ -1,0 +1,48 @@
+// Base styles
+// ---------------------------------------/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: $white;
+}
+
+body {
+  @include sans;
+  color: $text;
+  font-size: $body-font-size;
+  line-height: 1.58;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+.wrapper:before,
+.wrapper:after { content: ""; display: table; }
+.wrapper:after { clear: both; }
+.wrapper {
+  max-width: $container-width;
+  padding: 0 40px;
+  margin: 0 auto;
+
+  @include media_mobile {
+    padding: 0 20px;
+  }
+}
+
+::selection {
+  background: rgba(44, 62, 80, 0.2);
+  color: $primary;
+}
+
+a {
+  color: $accent;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($accent, 15%);
+    text-decoration: underline;
+  }
+}

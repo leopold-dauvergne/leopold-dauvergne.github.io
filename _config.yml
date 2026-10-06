@@ -1,0 +1,39 @@
+# Site settings
+title: "Leopold Dauvergne"
+description: "Senior Solution Architect — Resume"
+
+# GitHub Pages settings
+url: "https://leopold-dauvergne.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Resume settings
+resume_avatar:                  "true"
+resume_name:                    "Leopold Dauvergne"
+resume_title:                   "Dipl.-Ing. | Senior Solution Architect"
+resume_contact_email:           "dauvergne.leopold@gmail.com"
+resume_location:                "Munich, Germany"
+resume_summary:                   "Solution Architect with 13+ years putting systems into production in environments with compliance departments and long procurement cycles — defense, government, fintech, enterprise software — now doing the same for agentic AI. Builds and ships LLM systems end to end: MCP servers, multi-agent workflows, RAG, and self-hosted inference on CUDA and ROCm — with the telemetry and release verification that make those systems auditable in operation. Communicates across the full stack — from kernel-level debugging to executive architecture briefings — as an experienced technical speaker working in French, English, and German. Stays hands-on through deployment, and runs a multi-node inference and agent-orchestration stack as personal infrastructure."
+
+# use "yes" to display the email contact button,
+# "no" to display an "I'm not looking for work" message,
+# or remove the resume_looking_for_work option entirely
+# to leave blank
+resume_looking_for_work:        "yes"
+
+# Resume social links
+resume_social_links:
+  resume_github_url:            "https://github.com/leo-3889"
+  resume_linkedin_url:          "https://www.linkedin.com/in/leopold-dauvergne/"
+
+# Design settings
+resume_theme:                   default
+
+# Note: when editing locally, remember to restart
+# your Jekyll server when you edit this file. Changes
+# to _config.yml are only recognized when the server starts
